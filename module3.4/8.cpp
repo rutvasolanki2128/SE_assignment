@@ -12,22 +12,26 @@ int main(){
 	char str1[10];
 	int i,j=0,k,l=0,m;
 	printf("enter the word: ");
-	scanf(" %c",str1);
+	//scanf(" %s",&str1);
+	gets(str1);
 	for(i=0;str1[i]!='\0';i++){
 		j=j+1;
 	}
-	for(i=j;i>=0;i--){
-		for(k=0;k<=j;k++){
+	//printf("\n length %d",j);
+	k=0;
+	for(i=j-1;i>=0;i--){
 			
-			if(str1[i]==str1[k]){
-				l=l+1;		
-			}		
-		}
+			if(str1[i]!=str1[k]){
+				printf("\n %c  %c",str1[i],str1[k]);
+				l++;
+			}
+			k++;		
+		
 	}
 	
-	printf("%d",l);
+	printf("\n loop %d",l);
 	
-	if(l==j){
+	if(l==0){
 		printf("it is plaindrome");
 	}
 	else{
@@ -35,9 +39,5 @@ int main(){
 		
 		
 	}	
-	
-	
-	
-	
-	
+
 }

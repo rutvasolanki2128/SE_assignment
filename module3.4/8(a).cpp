@@ -8,9 +8,15 @@ struct emp_details{
 	printf("enter the number: ");
 	scanf("%d",&a);
 	printf("enter your name: ");
-	scanf(" %s",&name[100]);
+	scanf(" %s",&name);
 	printf("enter the address: ");
-	scanf(" %s",&a);
+	scanf(" %s",&address);
+	
+	//printing
+	 printf("name = %s ",name);
+	 printf("number = %d ",a);
+	 printf("address = %s: ",address);
+	
 	}
 
 	
