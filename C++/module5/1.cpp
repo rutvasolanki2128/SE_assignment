@@ -2,17 +2,20 @@
 #include<iostream>
 using namespace std;
 template<typename t>
-t max_no(t a,t b){
+t change(t a,t b){
+int c=0;
+c=a;
+a=b;
+b=c;
+cout<<"a= "<<a;
+cout<<"b= "<<b;
+
+}
 	
 	
-	if(a>b){
-		return a;
-	}else {
-		return b;
-	}
-		
-	}
+
 
 int main(){
-	cout<<max_no<int>(3,7)<<endl;
+
+	change<int>(3,7);
 }
